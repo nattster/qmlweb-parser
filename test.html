@@ -1,0 +1,15 @@
+<script src="lib/qmlweb.parser.js"></script>
+
+<body>
+<script language="javascript">
+var text = `
+import QmlWeb.DOM 1.0 as DOM
+Item {
+  items: [
+    DOM.Div {},
+    DOM.Div {}
+  ]
+}`;
+console.log(QmlWeb.parse(text))
+</script>
+</body>
