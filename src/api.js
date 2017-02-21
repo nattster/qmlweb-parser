@@ -196,6 +196,8 @@ function qmlweb_parse($TEXT, document_type, exigent_mode) {
     var expr = maybe_assign(no_in);
     if (is("punc", "{")) {
       var qmlelem_name;
+      // inside property assignment?
+      debugger;
       if (expr[0] === "dot") {
         qmlelem_name = ["dot", expr[1][1], expr[2]];
       } else {
@@ -328,6 +330,7 @@ function qmlweb_parse($TEXT, document_type, exigent_mode) {
           onProp = S.token.value;
           next();
         }
+        debugger; // QML Elemen outside prop
         return as("qmlelem", propname, onProp, qmlblock());
       } else if (is("punc", "{")) {
         return as("qmlobj", propname, qmlblock());
