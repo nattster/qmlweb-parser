@@ -1,0 +1,52 @@
+[
+  "toplevel",
+  [
+    [
+      "qmlimport",
+      "QtQuick",
+      2,
+      "",
+      true
+    ],
+    [
+      "qmlimport",
+      "QmlWeb.DOM",
+      1,
+      "",
+      true
+    ]
+  ],
+  [
+    "qmlelem",
+    "Item",
+    null,
+    [
+      [
+        "qmlprop",
+        "items",
+        [
+          "stat",
+          [
+            "array",
+            [
+              [
+                "qmlelem",
+                "Div",
+                null,
+                []
+              ],
+              [
+                "qmlelem",
+                "Div",
+                null,
+                []
+              ]
+            ],
+            "[Div {},\n    Div {}\n  ]\n"
+          ]
+        ],
+        "[\n    Div {},\n    Div {}\n  ]\n"
+      ]
+    ]
+  ]
+]
